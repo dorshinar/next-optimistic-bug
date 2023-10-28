@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useOptimistic, useState } from "react";
-import { action } from "./action";
 
 export function Form() {
   const [_arr, setArr] = useState([1, 2, 3]);
@@ -17,7 +16,7 @@ export function Form() {
   console.log("🚀 ~ arr:", arr);
 
   return (
-    <form action={action}>
+    <form>
       {JSON.stringify(arr)}
       <button>Toggle Checked</button>
     </form>
